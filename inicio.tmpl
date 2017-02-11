@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+	<head>
+		<meta charset="UTF-8">
+		<title>RED DISTRUBUIDA DE HONEYPOTS</title>
+	</head>
+	<body>
+		<H2>RED DISTRUBUIDA DE HONEYPOTS</H2>
+		<form action="#" method="POST">
+			<table>
+				<tr>
+					<td>Institucion: <input type="text" name="institucion" placeholder="Institucion" pattern="\b.+\b" title="Nombre de la institucion" required/></td>
+				</tr>
+				<tr>
+					<td>Numero de honeypots: <input type="text" name="numero" placeholder="Numero de honeypots" pattern="\b^[1-9][0-9]*$\b" title="Numero de honeypots" required/></td>
+				</tr>
+				<tr>
+					<td> <input type="hidden"  name="selector" value="ingresa"> </td>
+				</tr>
+				<tr>
+					<td> <input type="submit" value="Siguiente"> </td>
+				</tr>
+			</table>
+		</form> 
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <title>RED DISTRUBUIDA DE HONEYPOTS</title>
+    </head>
+    <H2>DATOS DE REGISTRO</H2>
+    <body>
+      	<form action="#" method="POST">
+		<input type="hidden" name="total" value=<TMPL_VAR NAME =total>>
+		<input type="hidden" name="institucion" value=<TMPL_VAR NAME = institucion>>
+		<tmpl_loop name=numero>
+        <table>
+	        Honeypot <TMPL_VAR NAME = number> :<br>
+	        Institucion: <TMPL_VAR NAME = institucion>
+	        <tr>
+	           <td>Tipo de honeypot: <input type="text" name=<TMPL_VAR NAME = tipo>  placeholder="Tipo" pattern="\b.+\b" title="Tipo de honeypot" required/> </td>
+	        </tr>
+	        <tr>
+	           <td>IP: <input type="text" name=<TMPL_VAR NAME = ip> placeholder="Direccion IP" pattern="\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b" title="Direccion no valida"  required/> </td>
+	        </tr>
+        </table> 
+        <br> 
+		</tmpl_loop>
+	    <input type="hidden"  name="selector" value="resultado"> 
+	    <input type="submit" value="Registrar"> 
+    </body>
+</form>
+</html>

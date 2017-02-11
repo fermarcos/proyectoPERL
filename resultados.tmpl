@@ -1,0 +1,15 @@
+<title>RED DISTRUBUIDA DE HONEYPOTS</title>
+<H2>HONEYPOTS REGISTRADOS:</H2>
+<tmpl_loop name=resultados>
+   <div>
+    <fieldset>
+          <form method=post action=#>
+              <tmpl_var name=linea>
+          </form>
+    </fieldset>
+   </div>
+</tmpl_loop>
+<form action="#" method="POST">
+<input type="hidden"  name="selector" value="view">
+<input type="submit" value="Inicio"> 
+</form>
