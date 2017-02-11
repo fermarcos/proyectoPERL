@@ -6,6 +6,6 @@ Generación automática de identificadores y contraseñas para la Red Distribuid
 
 * **Yeudiel Hernández**
 * **Iván Hernández**
-* **Ivan Monroy**
+* **Cristian Monroy**
 * **Fernando Parra**
 * **Jonathan Soto**
